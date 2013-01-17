@@ -1,1 +1,1 @@
-if(typeof document.getElementById('email') !== 'undefined')document.getElementById('email').autocomplete=""
+var email = document.getElementById('email'); if(email) email.autocomplete='';
