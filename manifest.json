@@ -1,0 +1,16 @@
+{
+  // Required
+  "name": "Remember Xero Email",
+  "version": "1",
+  "manifest_version": 2,
+
+  // Recommended
+  "description": "Allows autocomplete to work on the Xero login Email field to save typing your email address every time",
+  "content_scripts": [
+  {
+	"matches": ["https://login.xero.com/*"],
+	"js": ["extension.js"],
+	"run_at": "document_end"
+  }
+  ]
+ }
